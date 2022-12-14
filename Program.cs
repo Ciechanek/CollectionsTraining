@@ -20,6 +20,8 @@ namespace CollectionTests
             }
 
             listOfWebPageUsers.WriteListInAlphabeticalOrder(listOfWebPageUsers.usersList);
+            listOfWebPageUsers.CopyListToAnotherOne(listOfWebPageUsers.usersList);
+
         }
     }
 }

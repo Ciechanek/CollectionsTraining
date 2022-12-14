@@ -28,9 +28,16 @@ namespace CollectionTests
                 Console.WriteLine(user.GetLastNameOfUser());
             }
         }
-        public void CopyListToAnotherOne(List<User> list)
+        public User[] CopyListToAnotherOne(List<User> list)
         {
-
+            User[] newList = new User[list.Count];
+            list.CopyTo(newList);
+            Console.WriteLine("Here is the list coppied to an array");
+            foreach (User user in newList)
+            {
+                Console.WriteLine(user.GetLastNameOfUser());
+            }
+            return newList;
         }
     }
 }
